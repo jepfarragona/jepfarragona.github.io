@@ -1,0 +1,30 @@
+{
+  "id": "3550019",
+  "name": "jepf",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5226638",
+      "name": "spotify",
+      "font_class": "spotify",
+      "unicode": "e64b",
+      "unicode_decimal": 58955
+    },
+    {
+      "icon_id": "380337",
+      "name": "facebook",
+      "font_class": "facebook",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    },
+    {
+      "icon_id": "11992527",
+      "name": "discord",
+      "font_class": "discord",
+      "unicode": "e675",
+      "unicode_decimal": 58997
+    }
+  ]
+}
