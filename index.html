@@ -14,7 +14,7 @@
           }
         site_name();     
   </script>
-  <script src="https://api.countapi.xyz/hit/jepfarragona.github.io/visits?callback=liveViews" async></script>
+  <script async src="https://api.countapi.xyz/hit/jepfarragona.github.io/b5278ffa-2b01-420f-8271-046b8d4c3af9?callback=liveViews"></script>
   <script>
 var isNS = (navigator.appName == "Netscape") ? 1 : 0;
 if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
@@ -148,9 +148,8 @@ gtag('config', 'UA-109696496-3');
 </audio>
 <script type="text/javascript">
 function liveViews(response) {
-    document.getElementById('visits').innerText = response.value;
-}
-// The function is called in the CDN on HTML.	
+    document.querySelector("#visits").textContent = response.value;
+}	
 </script>
 <script src="assets/npm/animejs%403.2.1/lib/anime.min.js"></script>
 <script>window.$ = selector => document.querySelector(selector)
