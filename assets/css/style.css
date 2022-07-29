@@ -91,6 +91,10 @@ a {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-eye:before {
+  content: "\e7ed";
+}
+
 .icon-spotify:before {
   content: "\e64b";
 }

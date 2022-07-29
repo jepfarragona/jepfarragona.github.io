@@ -1,9 +1,9 @@
 @font-face {
   font-family: "iconfont"; /* Project id 3550019 */
-  src: url('iconfont.woff2?t=1658919555902') format('woff2'),
-       url('iconfont.woff?t=1658919555902') format('woff'),
-       url('iconfont.ttf?t=1658919555902') format('truetype'),
-       url('iconfont.svg?t=1658919555902#iconfont') format('svg');
+  src: url('iconfont.woff2?t=1659110501708') format('woff2'),
+       url('iconfont.woff?t=1659110501708') format('woff'),
+       url('iconfont.ttf?t=1659110501708') format('truetype'),
+       url('iconfont.svg?t=1659110501708#iconfont') format('svg');
 }
 
 .iconfont {
@@ -12,6 +12,10 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-eye:before {
+  content: "\e7ed";
 }
 
 .icon-spotify:before {

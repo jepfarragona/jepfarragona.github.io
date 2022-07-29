@@ -14,6 +14,7 @@
           }
         site_name();     
   </script>
+  <script src="https://api.countapi.xyz/hit/jepfarragona.github.io/visits?callback=liveViews" async></script>
   <script>
 var isNS = (navigator.appName == "Netscape") ? 1 : 0;
 if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
@@ -33,7 +34,7 @@ document.onmouseup = mousehandler;
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2,viewport-fit=cover">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="renderer" content="webkit">
-	<meta name="author" content="Jepf Arragona">
+	<meta name="author" content="Simon Ma">
 	<meta name="theme-color" content="#222325">
 	<meta name="apple-mobile-web-app-status-bar-style" content="#222325">
 	<meta name="msapplication-navbutton-color" content="#222325">
@@ -91,7 +92,7 @@ gtag('config', 'UA-109696496-3');
 						<path class="octo-body" d="M115 115C114.9 115.1 118.7 116.5 119.8 115.4L133.7 101.6C136.9 99.2 139.9 98.4 142.2 98.6 133.8 88 127.5 74.4 143.8 58 148.5 53.4 154 51.2 159.7 51 160.3 49.4 163.2 43.6 171.4 40.1 171.4 40.1 176.1 42.5 178.8 56.2 183.1 58.6 187.2 61.8 190.9 65.4 194.5 69 197.7 73.2 200.1 77.6 213.8 80.2 216.3 84.9 216.3 84.9 212.7 93.1 206.9 96 205.4 96.6 205.1 102.4 203 107.8 198.3 112.5 181.9 128.9 168.3 122.5 157.7 114.1 157.9 116.9 156.7 120.9 152.7 124.9L141 136.5C139.8 137.7 141.6 141.9 141.8 141.8Z" fill="currentColor"></path></svg></a>
 						<style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 						<style type="text/css">
-							#cat {
+	#cat {
       position:fixed;
       z-index:999;
       width:115px;
@@ -115,7 +116,7 @@ gtag('config', 'UA-109696496-3');
       transition:all .6s ease-out;
     }
 		</style>
-						<h2 class="content-title">Jepf Arragona</h2><h3 class="content-subtitle" original-content="Front-end Developer">&nbsp;</h3><a class="enter">enter</a>
+						<h2 class="content-title">Jepf Arragona</h2><h3 class="content-subtitle" original-content="Front-End Developer">&nbsp;</h3><a class="enter">enter</a>
 						<div class="arrow arrow-1"></div>
 						<div class="arrow arrow-2"></div>
 					</div>
@@ -123,7 +124,7 @@ gtag('config', 'UA-109696496-3');
 						<div class="shape-wrap">
 							<svg class="shape" width="100%" height="100vh" preserveAspectRatio="none" viewBox="0 0 1440 800" xmlns:pathdata="http://www.codrops.com/">
 							<path d="M-44-50C-52.71 28.52 15.86 8.186 184 14.69 383.3 22.39 462.5 12.58 638 14 835.5 15.6 987 6.4 1194 13.86 1661 30.68 1652-36.74 1582-140.1 1512-243.5 15.88-589.5-44-50Z" pathdata:id="M -44,-50 C -137.1,117.4 67.86,445.5 236,452 435.3,459.7 500.5,242.6 676,244 873.5,245.6 957,522.4 1154,594 1593,753.7 1793,226.3 1582,-126 1371,-478.3 219.8,-524.2 -44,-50 Z"></path></svg></div></div>
-							<div class="content content-main">
+							<div class="content content-main"><i class="icon icon-eye" style="color:white;position:fixed;right:30px;top:7px"></i><span style="color:white;position:fixed;right:20px;top:10px;font-size:15px" id="visits"></span>
 								<div id="card">
 									<div class="card-inner fade">
 										<header>
@@ -145,6 +146,12 @@ gtag('config', 'UA-109696496-3');
 <audio controls="" autoplay="autoplay" loop="loop" style="display:none;">
 <source src="binary.mp3" type="audio/mpeg">
 </audio>
+<script type="text/javascript">
+function liveViews(response) {
+    document.getElementById('visits').innerText = response.value;
+}
+// The function is called in the CDN on HTML.	
+</script>
 <script src="assets/npm/animejs%403.2.1/lib/anime.min.js"></script>
 <script>window.$ = selector => document.querySelector(selector)
 const getOriginalContent = selector => $(selector).getAttribute("original-content")
