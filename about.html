@@ -24,9 +24,7 @@
     <meta name="msapplication-navbutton-color" content="#747171" />
     <meta http-equiv="x-dns-prefetch-control" content="on" />
     <link rel="shortcut icon" type="image/x-icon" href="light.svg" id="faviconTag" />
-    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Tomotoes/images/blog/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/Tomotoes/images/PWA/apple-touch-icon.png" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/firacode@5.2.0/distr/fira_code.min.css" />
+    <link rel="stylesheet" href="assets/npm/firacode@5.2.0/distr/fira_code.min.css" />
     <link href="https://tomotoes.com/about/" rel="canonical" />
     <link rel="manifest" href="https://tomotoes.com/manifest.json" />
     <meta name="mobile-web-app-capable" content="yes" />
@@ -57,16 +55,36 @@
         <path class="octo-body" d="M115 115C114.9 115.1 118.7 116.5 119.8 115.4L133.7 101.6C136.9 99.2 139.9 98.4 142.2 98.6 133.8 88 127.5 74.4 143.8 58 148.5 53.4 154 51.2 159.7 51 160.3 49.4 163.2 43.6 171.4 40.1 171.4 40.1 176.1 42.5 178.8 56.2 183.1 58.6 187.2 61.8 190.9 65.4 194.5 69 197.7 73.2 200.1 77.6 213.8 80.2 216.3 84.9 216.3 84.9 212.7 93.1 206.9 96 205.4 96.6 205.1 102.4 203 107.8 198.3 112.5 181.9 128.9 168.3 122.5 157.7 114.1 157.9 116.9 156.7 120.9 152.7 124.9L141 136.5C139.8 137.7 141.6 141.9 141.8 141.8Z" fill="currentColor"></path>
       </svg>
     </a>
-    <script type="text/javascript">document.addEventListener("contextmenu", function(e) {
+
+    <script>
+    const faviconTag = document.getElementById("faviconTag");
+    const isDark = window.matchMedia("(prefers-color-scheme: dark)");
+    
+    const changeFavicon = () => {
+    if (isDark.matches) faviconTag.href = "dark.svg";
+    else faviconTag.href = "light.svg";
+  };
+  
+    changeFavicon();
+  
+    setInterval(changeFavicon, 1000);
+  </script>
+
+  <script type="text/javascript">
+      document.addEventListener("contextmenu", function(e) {
   "use strict";
   e.preventDefault();
-});</script>
-<script type="text/javascript">document.addEventListener("keydown", function (event) {
+});
+</script>
+
+<script type="text/javascript">
+  document.addEventListener("keydown", function (event) {
     if (event.ctrlKey) {
         event.preventDefault();
     }   
 });
 </script>
+
 <script>  
 document.onkeypress = function (event) {  
 event = (event || window.event);  
@@ -87,6 +105,7 @@ return false;
 }  
 }  
 </script> 
+
     <script>
       ! function(e) {
         function t(t) {

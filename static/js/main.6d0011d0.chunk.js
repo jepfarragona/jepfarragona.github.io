@@ -22,7 +22,7 @@
 				l = ["Hi! ".concat("Welcome", "."), {
 					type: "system",
 					label: "System",
-					content: "cd ".concat("C:/About me/Profile")
+					content: "cd ".concat("C:/Profile/About me")
 				}, {
 					type: "system",
 					label: "System",
@@ -42,6 +42,11 @@
 					type: "info",
 					label: "Age:",
 					content: "25"
+				}, {
+					time: r(),
+					type: "info",
+					label: "Zodiac:",
+					content: "Libra"	
 				}, {
 					time: r(),
 					type: "info",
