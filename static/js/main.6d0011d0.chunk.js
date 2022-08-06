@@ -114,7 +114,7 @@
 										type: "success",
 										label: "Success",
 										content: "Opening"
-									}), window.open("https://tomotoes.com/gallery/", "_blank"), t({
+									}), window.open("https://jepfarragona.github.io/gallery/", "_blank"), t({
 										type: "success",
 										label: "Done",
 										content: ":)"
