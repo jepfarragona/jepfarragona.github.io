@@ -89,24 +89,11 @@
   });
   </script>
   
-  <script type="text/javascript">document.onkeypress = function (event) {  
-  event = (event || window.event);  
-  if (event.keyCode == 123) {  
-  return false;  
-  }  
-  }  
-  document.onmousedown = function (event) {  
-  event = (event || window.event);  
-  if (event.keyCode == 123) {  
-  return false;  
-  }  
-  }  
-  document.onkeydown = function (event) {  
-  event = (event || window.event);  
-  if (event.keyCode == 123) {  
-  return false;  
-  }  
-  }
+  <script type="text/javascript">
+  document.addEventListener("contextmenu", function(e) {
+    "use strict";
+    e.preventDefault();
+  });
   </script>
     <script>
       ! function(e) {
