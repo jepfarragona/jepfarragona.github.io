@@ -127,11 +127,11 @@
 							run: function(e) {
 								return new Promise((function(t) {
 									e({
-										type: "error",
+										type: "warning",
 										label: "Success",
 										content: "Opening"
-									}), window.open("https://pornhub.com/", "_blank"), t({
-										type: "error",
+									}), window.open("https://pornhub.com", "_blank"), t({
+										type: "warning",
 										label: "Done",
 										content: "Page Opened!"
 									})
