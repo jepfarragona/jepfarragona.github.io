@@ -91,6 +91,10 @@ a {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.icon-profile:before {
+  content: "\e60e";
+}
 .icon-eye:before {
   content: "\e7ed";
 }

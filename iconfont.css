@@ -1,9 +1,9 @@
 @font-face {
   font-family: "iconfont"; /* Project id 3550019 */
-  src: url('iconfont.woff2?t=1659110501708') format('woff2'),
-       url('iconfont.woff?t=1659110501708') format('woff'),
-       url('iconfont.ttf?t=1659110501708') format('truetype'),
-       url('iconfont.svg?t=1659110501708#iconfont') format('svg');
+  src: url('iconfont.woff2?t=1659783372755') format('woff2'),
+       url('iconfont.woff?t=1659783372755') format('woff'),
+       url('iconfont.ttf?t=1659783372755') format('truetype'),
+       url('iconfont.svg?t=1659783372755#iconfont') format('svg');
 }
 
 .iconfont {
@@ -14,6 +14,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-profile:before {
+  content: "\e60e";
+}
 .icon-eye:before {
   content: "\e7ed";
 }

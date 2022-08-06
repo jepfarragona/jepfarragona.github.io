@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "4868918",
+      "name": "profile",
+      "font_class": "profile",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "6151209",
+      "name": "eye",
+      "font_class": "eye",
+      "unicode": "e7ed",
+      "unicode_decimal": 59373
+    },
+    {
       "icon_id": "5226638",
       "name": "spotify",
       "font_class": "spotify",
