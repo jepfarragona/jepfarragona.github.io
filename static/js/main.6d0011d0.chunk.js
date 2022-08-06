@@ -45,11 +45,6 @@
 				}, {
 					time: r(),
 					type: "info",
-					label: "Zodiac:",
-					content: "Libra"	
-				}, {
-					time: r(),
-					type: "info",
 					label: "Email:",
 					content: "jepfarragona@gmail.com"
 				}],
