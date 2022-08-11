@@ -728,7 +728,7 @@ let bloomFramebuffers = [];
 let sunrays;
 let sunraysTemp;
 
-let ditheringTexture = createTextureAsync('assets/js/background.png');
+let ditheringTexture = createTextureAsync('assets/js/overlay.png') center top repeat;
 
 const blurProgram = new Program(blurVertexShader, blurShader);
 const copyProgram = new Program(baseVertexShader, copyShader);
