@@ -176,8 +176,8 @@
 								content: "https://t.me/sleak"
 							}, {
 							type: "info",
-								label: "Discord:",
-								content: "https://discordapp.com/users/208233081088245760"
+								label: "Skype:",
+								content: "iamzildjian"
 							}]
 						},
 						skill: {
